@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -28,4 +28,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     //fresco
     compile 'com.facebook.fresco:fresco:0.11.0'
+    //AutoLayout屏幕适配
+    compile 'com.zhy:autolayout:1.4.3'
+    //显示gif动画
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+
 }
