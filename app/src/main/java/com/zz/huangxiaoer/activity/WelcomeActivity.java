@@ -1,11 +1,11 @@
 package com.zz.huangxiaoer.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageButton;
 
+import com.zhy.autolayout.AutoLayoutActivity;
 import com.zz.huangxiaoer.MainActivity;
 import com.zz.huangxiaoer.R;
 import com.zz.huangxiaoer.manager.LazyViewPager;
@@ -14,7 +14,7 @@ import com.zz.huangxiaoer.utils.CommonUtils;
 
 import java.util.ArrayList;
 
-public class WelcomeActivity extends AppCompatActivity {
+public class WelcomeActivity extends AutoLayoutActivity {
 
     private ImageButton ibtn_welcome;
     private LazyViewPager vp_welcome;

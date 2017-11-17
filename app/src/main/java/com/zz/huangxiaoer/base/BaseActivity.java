@@ -1,4 +1,4 @@
-package com.zz.huangxiaoer.activity;
+package com.zz.huangxiaoer.base;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;

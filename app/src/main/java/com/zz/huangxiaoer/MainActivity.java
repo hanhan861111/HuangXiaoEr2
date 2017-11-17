@@ -1,16 +1,16 @@
 package com.zz.huangxiaoer;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.zz.huangxiaoer.activity.HomepageActivity;
+import com.zhy.autolayout.AutoLayoutActivity;
+import com.zz.huangxiaoer.activity.HomeActivity;
 import com.zz.huangxiaoer.utils.CommonUtils;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AutoLayoutActivity {
 
     private EditText etnum_login;
     private EditText etpass_login;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         entry_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CommonUtils.startActivity(MainActivity.this, HomepageActivity.class);
+                CommonUtils.startActivity(MainActivity.this, HomeActivity.class);
             }
         });
     }

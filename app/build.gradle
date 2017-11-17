@@ -32,5 +32,9 @@ dependencies {
     compile 'com.zhy:autolayout:1.4.3'
     //显示gif动画
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
-
+    //Retrofit网络请求框架
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    //Gson
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
 }
