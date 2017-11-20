@@ -11,7 +11,7 @@ import com.zz.huangxiaoer.interfaces.IOnResetShowingPage;
 import com.zz.huangxiaoer.views.ShowingPage;
 
 /**
- * Created by ${韩永光} on on 2017/11/17 0017 11:16..
+ * Created by ${韩永光} on on 2017/11/17 0017 11:17..
  */
 
 public abstract class BaseFragment extends Fragment {
