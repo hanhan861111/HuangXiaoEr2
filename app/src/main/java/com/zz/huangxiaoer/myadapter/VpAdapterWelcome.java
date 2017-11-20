@@ -13,11 +13,11 @@ import pl.droidsonroids.gif.GifImageView;
  * Created by ${韩永光} on on 2017/11/15 0015 17:10..
  */
 
-public class VpAdapter_Welcome extends PagerAdapter {
+public class VpAdapterWelcome extends PagerAdapter {
     private final Context context;
     private final ArrayList<Integer> imgList;
 
-    public VpAdapter_Welcome(Context context, ArrayList<Integer> imgList) {
+    public VpAdapterWelcome(Context context, ArrayList<Integer> imgList) {
         super();
         this.context = context;
         this.imgList = imgList;

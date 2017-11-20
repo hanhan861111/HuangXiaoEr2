@@ -107,7 +107,7 @@ public class CommonUtils {
     //更新主线程
     public static void runOnUIthread(Runnable runnable) {
         //判断当前线程是主线程OR子线程
-        if (Process.myTid() == MyApplication.getMyThreadTid()) {
+        if (Process.myTid() == MyApplication.getMainThreadId()) {
             //在主线程  直接运行
             runnable.run();
         } else {

@@ -16,7 +16,7 @@ public class MyApplication extends Application{
 
     private static Context context;
     private static Handler handler;
-    private static int myThreadTid;
+    private static int mainThreadId;
     private static ExecutorService threadPool;
     public static boolean isLogin = false;//判定是否登录
     @Override
@@ -26,7 +26,7 @@ public class MyApplication extends Application{
         //创建线程
         handler = new Handler();
         //获取主线程ID
-        myThreadTid = Process.myTid();
+        mainThreadId = Process.myTid();
         //创建线程池
         threadPool = Executors.newFixedThreadPool(5);
         //初始化Fresco
@@ -42,8 +42,8 @@ public class MyApplication extends Application{
         return handler;
     }
 
-    public static int getMyThreadTid() {
-        return myThreadTid;
+    public static int getMainThreadId() {
+        return mainThreadId;
     }
 
     public static ExecutorService getThreadPool() {

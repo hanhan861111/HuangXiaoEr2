@@ -9,7 +9,7 @@ import com.zhy.autolayout.AutoLayoutActivity;
 import com.zz.huangxiaoer.MainActivity;
 import com.zz.huangxiaoer.R;
 import com.zz.huangxiaoer.manager.LazyViewPager;
-import com.zz.huangxiaoer.myadapter.VpAdapter_Welcome;
+import com.zz.huangxiaoer.myadapter.VpAdapterWelcome;
 import com.zz.huangxiaoer.utils.CommonUtils;
 
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public class WelcomeActivity extends AutoLayoutActivity {
 
     private void initViewPager() {
         //设置viewPager适配
-        vp_welcome.setAdapter(new VpAdapter_Welcome(this, imgList));
+        vp_welcome.setAdapter(new VpAdapterWelcome(this, imgList));
         //设置ViewPager监听
         vp_welcome.setOnPageChangeListener(new LazyViewPager.OnPageChangeListener() {
             @Override

@@ -1,7 +1,7 @@
 package com.zz.huangxiaoer.fragment;
 
-import android.view.LayoutInflater;
 import android.view.View;
+
 import com.zz.huangxiaoer.R;
 import com.zz.huangxiaoer.base.BaseFragment;
 import com.zz.huangxiaoer.utils.CommonUtils;
@@ -24,7 +24,8 @@ public class BespeakFragment extends BaseFragment {
 
     @Override
     public View CreateSuccessView() {
-        View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_bespeak, null);
+        View view=CommonUtils.inflate(R.layout.fragment_bespeak);
+       // View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_bespeak, null);
         return view;
     }
 }
