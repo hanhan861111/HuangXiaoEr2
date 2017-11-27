@@ -61,7 +61,7 @@ public class AddressActivity extends AutoLayoutActivity implements TencentLocati
         request.setAllowGPS(true); //当为false时，设置不启动GPS。默认启动
         request.setAllowIndoorLocation(true);  //设置启动室内定位，默认不启动
         mLocationManager = TencentLocationManager.getInstance(this);
-        //这一行执行不了   开启定位失败  开启就不能跳转  程序崩溃
+        //这一行执行不了   开启定位失败  开启就不能跳转  程序崩溃  注销此行不崩
        mLocationManager.requestLocationUpdates(request, this);//开启定位，其中的实现函数是TencentLocationListener，
 //        int error = mLocationManager.requestLocationUpdates(request, this);
 //        Log.e("TTT", error + "");
