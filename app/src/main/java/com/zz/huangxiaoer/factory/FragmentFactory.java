@@ -13,18 +13,20 @@ import java.util.HashMap;
 
 public class FragmentFactory {
     public static HashMap<Integer,Fragment> fragmentHashMap=new HashMap<>();
-    public static Fragment getFragment(int position){
+
+    public static Fragment getFragment(int position) {
         Fragment fragment = fragmentHashMap.get(position);
-        if(fragment!=null){
+        if (fragment != null) {
             return fragment;
         }
-        switch (position){
+        switch (position) {
             case 0:
-                 fragment = new BespeakFragment();
+                fragment = new BespeakFragment();
                 break;
             case 1:
-                 fragment = new MineFragmeng();
+                fragment = new MineFragmeng();
                 break;
+
         }
         fragmentHashMap.put(position,fragment);
         return fragment;

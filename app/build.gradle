@@ -14,7 +14,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
 }
@@ -37,4 +37,8 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
     //Gson
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'pub.devrel:easypermissions:0.1.9'
+    compile files('libs/TencentLocationSDK_v5.0.1_r251203_170116_1729.jar')
+    compile files('libs/TencentMapSDK_Raster_v1.0.6.jar')
 }

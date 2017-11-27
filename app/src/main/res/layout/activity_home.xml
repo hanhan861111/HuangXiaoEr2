@@ -6,85 +6,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.zz.huangxiaoer.activity.HomeActivity">
-    <com.zz.huangxiaoer.manager.NoScrollViewPager
+
+    <android.support.v4.view.ViewPager
         android:id="@+id/vp_home"
         android:layout_width="match_parent"
-        android:layout_weight="9"
-        android:layout_height="0px">
-        <!--<com.zhy.autolayout.AutoLinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="300px"-->
-            <!--android:background="@color/themeYellow"-->
-            <!--android:orientation="vertical">-->
+        android:layout_height="0px"
+        android:layout_weight="9">
 
-            <!--<TextView-->
-                <!--android:layout_width="500px"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginLeft="80px"-->
-                <!--android:layout_marginTop="100px"-->
-                <!--android:background="@null"-->
-                <!--android:ellipsize="end"-->
-                <!--android:padding="20px"-->
-                <!--android:singleLine="true"-->
-                <!--android:text="中原工学院科技园"-->
-                <!--android:textColor="@color/textWhite"-->
-                <!--android:textSize="40px" />-->
 
-            <!--<com.zz.huangxiaoer.manager.MyEditText-->
-                <!--android:id="@+id/edt_operator_name"-->
-                <!--android:layout_width="500px"-->
-                <!--android:layout_height="60px"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:background="@drawable/rounded_edittext"-->
-                <!--android:drawableLeft="@drawable/serch"-->
-                <!--android:ellipsize="end"-->
-                <!--android:hint="搜索店铺、菜品名称"-->
-                <!--android:singleLine="true"-->
-                <!--android:textSize="30px"-->
-                <!--/>-->
+    </android.support.v4.view.ViewPager>
 
-        <!--</com.zhy.autolayout.AutoLinearLayout>-->
-        <!--<TextView-->
-            <!--android:padding="20px"-->
-            <!--android:gravity="center_vertical"-->
-            <!--android:background="#f8f8f8"-->
-            <!--android:textColor="@color/textGray"-->
-            <!--android:text="附近商家"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="80px" />-->
-        <!--<android.support.v7.widget.RecyclerView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>-->
-
-    </com.zz.huangxiaoer.manager.NoScrollViewPager>
     <RadioGroup
         android:id="@+id/rg_home"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
+        android:layout_height="0px"
         android:layout_weight="1"
-        android:layout_height="0px">
-        <RadioButton
-            android:id="@+id/bespeak_rb"
+        android:orientation="horizontal">
+
+        <com.zz.huangxiaoer.manager.MyRadioButton
+            android:drawableLeft="@drawable/bespeak"
+            android:id="@+id/rb_bespeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:button="@null"
-            android:text="首页"
             android:checked="true"
-            android:drawableTop="@drawable/serch"
-            android:gravity="center"
-            android:layout_width="0px"
-            android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:gravity="center" />
 
-        <RadioButton
-            android:id="@+id/mine_rb"
-            android:text="我的"
-            android:gravity="center"
+        <com.zz.huangxiaoer.manager.MyRadioButton
+            android:id="@+id/rb_main"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:button="@null"
-            android:drawableTop="@drawable/serch"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content" />
+            android:gravity="center" />
     </RadioGroup>
-
 
 
 </com.zhy.autolayout.AutoLinearLayout>

@@ -21,14 +21,13 @@ public abstract class BaseFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
+        //因为不知道具体的展示title  需要继续抽象
         showingPage = new ShowingPage(getContext()) {
             @Override
             public View setSuccessView() {
                 //因为不知道具体的展示title  需要继续抽象
                 return CreateSuccessView();
             }
-
         };
         return showingPage;
     }

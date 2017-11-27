@@ -1,5 +1,7 @@
 package com.zz.huangxiaoer.fragment;
 
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import com.zz.huangxiaoer.R;
@@ -24,8 +26,9 @@ public class MineFragmeng extends BaseFragment {
 
     @Override
     public View CreateSuccessView() {
-        View view=CommonUtils.inflate(R.layout.fragment_mine);
-        //View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_mine, null);
+       // View view=CommonUtils.inflate(R.layout.fragment_mine);
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_mine, null);
+        Log.d("wwwwwww","~~~~~~~~~~~~~~~~~~~");
         return view;
     }
 }

@@ -13,7 +13,7 @@ public class LogUtils {
             Log.i(TAG,info);
         }
     }
-    public static void d(String TAG,String info){
+    public static void d(String TAG, String info){
         if(isDebug){
             Log.d(TAG,info);
         }

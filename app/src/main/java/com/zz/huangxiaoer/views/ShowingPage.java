@@ -43,13 +43,16 @@ public abstract class ShowingPage extends FrameLayout implements View.OnClickLis
         showLoadError.findViewById(R.id.showing_error_tv_reset).setOnClickListener(this);
         showLoading = view.findViewById(R.id.showLoading);
         showFrameLayout = (FrameLayout) view.findViewById(R.id.showSuccessView);
+
         this.addView(view);
+
         showFrameLayout.addView(setSuccessView());
         showPage();
     }
 
     //添加成功的视图
     public abstract View setSuccessView();
+
 
     public void setCurrentState(StateType stateType) {
         currentState = stateType.currentState;

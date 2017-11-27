@@ -1,8 +1,11 @@
 package com.zz.huangxiaoer.fragment;
 
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.TextView;
 
 import com.zz.huangxiaoer.R;
+import com.zz.huangxiaoer.activity.AddressActivity;
 import com.zz.huangxiaoer.base.BaseFragment;
 import com.zz.huangxiaoer.utils.CommonUtils;
 import com.zz.huangxiaoer.views.ShowingPage;
@@ -12,20 +15,33 @@ import com.zz.huangxiaoer.views.ShowingPage;
  */
 
 public class BespeakFragment extends BaseFragment {
+
+    private TextView tv_bespeakfragment;
+
+
     @Override
     protected void onload() {
         CommonUtils.runOnUIthread(new Runnable() {
             @Override
             public void run() {
-               showingPage.setCurrentState(ShowingPage.StateType.STATE_LOAD_SUCCESS);
+                showingPage.setCurrentState(ShowingPage.StateType.STATE_LOAD_SUCCESS);
+
+                tv_bespeakfragment.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                          CommonUtils.startActivity(getActivity(), AddressActivity.class);
+                    }
+                });
             }
         });
     }
 
     @Override
     public View CreateSuccessView() {
-        View view=CommonUtils.inflate(R.layout.fragment_bespeak);
-       // View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_bespeak, null);
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_bespeak, null);
+        tv_bespeakfragment = (TextView) view.findViewById(R.id.tv_bespeakfragment);
         return view;
     }
+
+
 }
